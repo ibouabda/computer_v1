@@ -6,7 +6,7 @@
 /*   By: ibouabda <ibouabda@42.students.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 13:59:43 by ibouabda          #+#    #+#             */
-/*   Updated: 2022/11/18 17:13:12 by ibouabda         ###   ########.fr       */
+/*   Updated: 2022/11/21 15:31:08 by ibouabda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,14 @@ int calculatorx2(double c, double b, double a)
     }
     else if (delta > 0.0)
     {
-        x1 = (-b + sqrt(delta)) / (2 * a);
-        x2 = (-b - sqrt(delta)) / (2 * a);
+        x1 = (-b + ft_dsqrt(delta)) / (2 * a);
+        x2 = (-b - ft_dsqrt(delta)) / (2 * a);
         printf("The solution is x1 = %f x2 = %f\n", x1, x2);
     }
     else
     {
-        i1 = (-b - I * sqrt(fabs(delta))) / (2 * a);
-        i2 = (-b + I * sqrt(fabs(delta))) / (2 * a);
+        i1 = (-b - I * ft_dsqrt(ft_dabs(delta))) / (2 * a);
+        i2 = (-b + I * ft_dsqrt(ft_dabs(delta))) / (2 * a);
         printf("The Complex Solution is : x1 = %.2f + %.2fi x2 = %.2f %+.2fi\n", creal(i1), cimag(i1), creal(i2), cimag(i2));
     }
     return (0);

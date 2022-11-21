@@ -6,7 +6,7 @@
 /*   By: ibouabda <ibouabda@42.students.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/11 15:22:12 by ibouabda          #+#    #+#             */
-/*   Updated: 2022/11/18 14:57:18 by ibouabda         ###   ########.fr       */
+/*   Updated: 2022/11/21 14:30:55 by ibouabda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <float.h>
 
 typedef	struct		s_prlist
 {
@@ -171,5 +172,9 @@ int					ft_abs(int value);
 int					ft_bool(int value);
 int					ft_isnumber(char *str, int i);
 char				*ft_strdelc(const char *src, int c);
+double				ft_dabs(double value);
+double 				ft_dsqrt(double number);
+float				ft_fsqrt(float number);
+
 
 #endif
